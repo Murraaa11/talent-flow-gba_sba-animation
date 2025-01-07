@@ -124,7 +124,7 @@ class FlowMap {
       // some country label might not be at the center of the area (adjust manually)
       switch (d.feature.properties.abbr) {
         case 'USA':
-          d.x += 20; d.y += 20;
+          d.x += 120; d.y += 5;
           break;
         case 'SBA':
           d.x += -30; d.y += 20;
