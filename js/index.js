@@ -1,5 +1,5 @@
 Promise.all([
-  d3.csv("data/GBA&SBA_flow_data_new_0123.csv"),
+  d3.csv("data/2020_2024_GBA_SBA_Flow.csv"),
   d3.json("data/worldmap_topojson_simplified.json"),
   d3.json("data/countries-10m.json"),
   d3.csv("data/country_chinese_name.csv"),
@@ -84,7 +84,7 @@ Promise.all([
     container: d3.select("#flow-legend-inbound"),
     color: color_in,
     x,
-    flowValues: [1000, 5000, 10000, 50000], //可能要改
+    flowValues: [5000, 10000, 50000, 200000], //可能要改
     tickValues: ["Outbound", "Inbound"],
     direction: "inbound",
   });
